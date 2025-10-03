@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="uk" data-theme="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT Company — Головна</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/script.js"></script>
+</head>
+
+<body class="loading">
+  <div id="pageLoader" class="page-loader" aria-hidden="false" role="status" aria-live="polite">
+    <div class="loader-inner">
+      <div class="loader-spinner" aria-hidden="true"></div>
+      <div class="loader-brand">
+        <div class="logo-mark" aria-hidden="true">IT</div>
+        <div class="brand-name">IT Company</div>
+      </div>
+    </div>
+  </div>
+
+<body>
+  <header class="site-header">
+    <div class="container nav-row">
+      <div class="brand" aria-label="IT Company">
+        <div class="logo-mark" aria-hidden="true">IT</div>
+        <div class="brand-text">
+          <div class="brand-name">IT Company</div>
+          <div class="muted small">Innovate & Scale</div>
+        </div>
+      </div>
+
+      <nav class="desktop" aria-label="Main navigation">
+        <a href="#services">Послуги</a>
+        <a href="#clients">Клієнти</a>
+        <a href="#contacts">Контакти</a>
+        <button class="cta-btn" onclick="location.href='#contacts'">Зв'язатися</button>
+      </nav>
+
+      <div class="header-actions">
+        <button id="themeToggle" class="theme-toggle" aria-pressed="false" aria-label="Перемкнути тему">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4" fill="currentColor"/>
+            <g stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <line x1="12" y1="1" x2="12" y2="3"/>
+              <line x1="12" y1="21" x2="12" y2="23"/>
+              <line x1="4.2" y1="4.2" x2="5.6" y2="5.6"/>
+              <line x1="18.4" y1="18.4" x2="19.8" y2="19.8"/>
+              <line x1="1" y1="12" x2="3" y2="12"/>
+              <line x1="21" y1="12" x2="23" y2="12"/>
+              <line x1="4.2" y1="19.8" x2="5.6" y2="18.4"/>
+              <line x1="18.4" y1="5.6" x2="19.8" y2="4.2"/>
+            </g>
+          </svg>
+        </button>
+
+        <button class="menu-toggle" aria-expanded="false" aria-label="Відкрити меню" onclick="toggleMobileMenu()">☰</button>
+      </div>
+    </div>
+
+    <div id="mobileNav" class="mobile-nav" aria-hidden="true">
+      <nav class="mobile" aria-label="Mobile navigation">
+        <a href="#services" onclick="closeMobileMenu()">
+            <img src="https://cdn-icons-png.flaticon.com/512/6229/6229678.png" width="15" height="15">
+             Послуги
+        </a>
+        <a href="#clients" onclick="closeMobileMenu()">
+            <img src="https://cdn-icons-png.flaticon.com/512/5455/5455723.png" width="15" height="15">
+             Клієнти
+        </a>
+        <a href="#contacts" onclick="closeMobileMenu()">
+            <img src="https://cdn-icons-png.flaticon.com/512/720/720236.png" width="15" height="15">
+             Контакти
+        </a>
+        <a href="tel:+380000000000">
+            <img src="https://cdn-icons-png.flaticon.com/512/950/950237.png" width="15" height="15">
+             Зателефонувати
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="top">
+      <div class="hero-inner container">
+        <div class="hero-left">
+          <h1>Розробляємо цифрові продукти, що працюють.</h1>
+          <p>Ми поєднуємо інженерну культуру й дизайн-мислення для створення веб та мобільних рішень, які масштабують бізнес і покращують досвід користувачів.</p>
+          <div class="kpis">
+            <div class="kpi"><strong>40% </strong><span class="muted">зростання продажів</span></div>
+            <div class="kpi"><strong>24/7 </strong><span class="muted">підтримка</span></div>
+            <div class="kpi"><strong>10+ </strong><span class="muted">років досвіду</span></div>
+          </div>
+        </div>
+
+        <aside class="hero-right fade-up" aria-hidden="false">
+          <div class="hero-card">
+            <div class="card-row">
+              <div>
+                <div class="card-title">Пропозиція</div>
+                <div class="muted small">Аналіз + MVP за 4 тижні</div>
+              </div>
+              <div class="card-arrow">➡</div>
+            </div>
+          </div>
+
+          <div class="hero-card">
+            <div class="card-row">
+              <div class="badge">API</div>
+              <div>
+                <div class="card-title">Архітектура & інтеграції</div>
+                <div class="muted small">Інтеграції з CRM/ERP/Cloud</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <button class="cta-btn" onclick="location.href='#contacts'">Отримати консультацію</button>
+            <a class="muted small" href="#clients">Наші кейси →</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="section-title container">Наші послуги</div>
+      <div class="section-sub container">Ми пропонуємо повний цикл розробки — від дизайну до підтримки.</div>
+
+      <div class="services-grid container" role="list">
+        <article class="service-card fade-up" role="listitem">
+          <h3>Веб-розробка</h3>
+          <p>SPA, SSR, продуктивні серверні рішення.</p>
+        </article>
+        <article class="service-card fade-up" role="listitem">
+          <h3>Мобільні застосунки</h3>
+          <p>Нативні та крос-платформні рішення.</p>
+        </article>
+        <article class="service-card fade-up" role="listitem">
+          <h3>UI/UX дизайн</h3>
+          <p>Прототипи, дослідження користувачів, тестування.</p>
+        </article>
+        <article class="service-card fade-up" role="listitem">
+          <h3>Cloud & DevOps</h3>
+          <p>Інфраструктура, CI/CD, Kubernetes.</p>
+        </article>
+        <article class="service-card fade-up" role="listitem">
+          <h3>Кібербезпека</h3>
+          <p>Pentest, аудит, політики безпеки.</p>
+        </article>
+        <article class="service-card fade-up" role="listitem">
+          <h3>Підтримка</h3>
+          <p>SLA, моніторинг, 24/7 супровід.</p>
+        </article>
+      </div>
+
+      <div class="services-list-mobile container" aria-hidden="true">
+        <div class="service-item">
+          <div class="service-badge">W</div>
+          <div><div class="service-title">Веб-розробка</div><div class="muted small">SPA, SSR</div></div>
+        </div>
+        <div class="service-item">
+          <div class="service-badge">M</div>
+          <div><div class="service-title">Мобільні застосунки</div><div class="muted small">iOS / Android</div></div>
+        </div>
+        <div class="service-item">
+          <div class="service-badge">U</div>
+          <div><div class="service-title">UI/UX</div><div class="muted small">Прототипи</div></div>
+        </div>
+        <div class="service-item">
+          <div class="service-badge">C</div>
+          <div><div class="service-title">Cloud & DevOps</div><div class="muted small">CI/CD</div></div>
+        </div>
+        <div class="service-item">
+          <div class="service-badge">S</div>
+          <div><div class="service-title">Кібербезпека</div><div class="muted small">Pentest</div></div>
+        </div>
+        <div class="service-item">
+          <div class="service-badge">T</div>
+          <div><div class="service-title">Підтримка</div><div class="muted small">SLA</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="clients" class="section">
+      <div class="section-title container">Клієнти & Відгуки</div>
+      <div class="slider-wrapper container">
+        <div class="slider" role="region" aria-label="Відгуки клієнтів">
+          <div class="slides-viewport">
+            <div class="slides" id="slidesInner">
+              <div class="slide">
+                <blockquote>“IT Company створили платформу, що підняла наш конверс на 40%.”</blockquote>
+                <div class="slide-author">— Oleg, CEO</div>
+              </div>
+              <div class="slide">
+                <blockquote>“Чудовий дизайн і UX. Користувачі почали довше залишатися в додатку.”</blockquote>
+                <div class="slide-author">— Anna, Product Manager</div>
+              </div>
+              <div class="slide">
+                <blockquote>“Професійний підхід до DevOps та надійна підтримка.”</blockquote>
+                <div class="slide-author">— Dmytro, CTO</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slider-controls">
+            <button class="btn-circle" id="prevSlide" aria-label="попередній">‹</button>
+            <button class="btn-circle" id="nextSlide" aria-label="наступний">›</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacts" class="section">
+      <div class="section-title container">Контакти</div>
+      <div class="section-sub container">Залиште заявку — ми відповімо протягом 24 годин.</div>
+
+      <div class="contacts-inner container">
+        <div class="contact-card">
+          <div class="card-title">Напишіть нам</div>
+          <div class="muted small">Питання по проекту, технічні деталі, співпраця</div>
+          <div class="contact-actions">
+            <a href="mailto:info@itcompany.com" class="contact-btn">
+                <img src="https://cdn-icons-png.flaticon.com/512/15047/15047587.png" alt="Email" width="24" height="24">
+                Email
+            </a>
+            <a href="tel:+380000000000" class="contact-btn">
+                <img src="https://cdn-icons-png.flaticon.com/512/9946/9946341.png" alt="Call" width="24" height="24">
+                Дзвінок
+            </a>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="card-title">Чат</div>
+          <div class="muted small">Швидкий контакт у месенджерах</div>
+          <div class="contact-actions">
+            <a href="https://t.me/@amer1goo" target="_blank" rel="noopener" class="contact-btn">
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968804.png" alt="Telegram" width="24" height="24">
+                Telegram
+            </a>
+            <a href="https://wa.me/380000000000" target="_blank" rel="noopener" class="contact-btn">
+                <img src="https://cdn-icons-png.flaticon.com/512/3670/3670051.png" alt="WhatsApp" width="24" height="24">
+                WhatsApp
+            </a>
+            <a href="viber://chat?number=%2B380000000000" class="contact-btn">
+                <img src="https://cdn-icons-png.flaticon.com/512/3670/3670059.png" alt="Viber" width="24" height="24">
+                Viber
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner container">
+      <div class="footer-left">
+        <div class="brand-name">IT Company</div>
+        <div class="muted small">© <span id="year"></span> Всі права захищені</div>
+      </div>
+
+      <div class="socials" aria-label="контакти">
+        <a href="tel:+380000000000" class="contact-btn">
+            <img src="https://cdn-icons-png.flaticon.com/512/9946/9946341.png" alt="Call" width="24" height="24">
+        </a>
+        <a href="mailto:info@itcompany.com" class="contact-btn">
+            <img src="https://cdn-icons-png.flaticon.com/512/15047/15047587.png" alt="Email" width="24" height="24">
+        </a>
+        <a href="https://t.me/@amer1goo" target="_blank" rel="noopener" class="contact-btn">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968804.png" alt="Telegram" width="24" height="24">
+        </a>
+        <a href="https://wa.me/380000000000" target="_blank" rel="noopener" class="contact-btn">
+            <img src="https://cdn-icons-png.flaticon.com/512/3670/3670051.png" alt="WhatsApp" width="24" height="24">
+        </a>
+        <a href="viber://chat?number=%2B380000000000" class="contact-btn">
+            <img src="https://cdn-icons-png.flaticon.com/512/3670/3670059.png" alt="Viber" width="24" height="24">
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
